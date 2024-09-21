@@ -5,18 +5,28 @@
   "data": {
     "url": "life-expectancy-2023.csv"
   },
-  "projection": {"type": "equirectangular"},
+  "projection": {
+    "type": "equirectangular"
+  },
   "mark": "geoshape",
   "encoding": {
     "color": {
       "field": "Life expectancy",
       "type": "quantitative",
-      "scale": {"scheme": "blues"}
+      "scale": {
+        "scheme": "blues"
+      }
     },
     "tooltip": [
-      {"field": "Entity", "type": "nominal", "title": "Country"},
-      {"field": "Life expectancy", "type": "quantitative"}
+      {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Life expectancy",
+        "type": "quantitative"
+      }
     ]
   }
 }
-
