@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "life-expectancy-2023.csv"
+  },
+  "projection": {"type": "equirectangular"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Life expectancy",
+      "type": "quantitative",
+      "scale": {"scheme": "blues"}
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal", "title": "Country"},
+      {"field": "Life expectancy", "type": "quantitative"}
+    ]
+  }
+}
+
